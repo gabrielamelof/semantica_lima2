@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -13,12 +17,18 @@ header{
     height: 80px;
 }
 
+header p{
+    font-size: 24px;
+    font-weight: 600px
+}
+
 main{
     display: flex;
-    justify-content: center;  
-    align-items: center;      
-    text-align: center; 
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;  
+    align-items: flex-start;      
+    text-align: center;
+    padding-right: 150px;
 }
 
 .imagem{
@@ -57,25 +67,59 @@ article{
     text-align: justify;
     width: 60%;
     margin: 0 auto;
+    padding-bottom: 30px;
+    font-size: 20px;
 }
 
 aside{
     margin: 0 auto;
 }
-.resumo{
+#resumo{
     padding-top: 50px;
 }
 
-.nota p{
+#nota {
+    padding-bottom: 50px;
+}
+#nota p{
     font-size: 35px;
     color: rgb(251,102,29);
 }
 
 .sumario{
     align-self: flex-start;
-    width: 20%;
-    align-items: center;
+    display: flex;
+    flex-direction: column;     
+    justify-content: center;     
+    width: 15%;
+    height: 160px;
+    align-items: start;
     padding-left: 50px;
     border:2px solid rgb(251,102,29);
     border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding-left: 0;
+    list-style-position: inside;  
+}
+
+.sumario a{
+    text-decoration: none;
+    color: rgb(251,102,29);
+}
+.conteudo{
+    flex: 1;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(251,102,29);
+    color: #ffff;
+    height: 80px;
+}
+footer p{
+    font-size: 24px;
+    font-weight: 600;
 }
